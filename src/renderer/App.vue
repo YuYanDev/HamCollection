@@ -68,7 +68,7 @@
       miniVariant: false,
       right: false,
       rightDrawer: false,
-      title: 'HAM Radio Tools',
+      title: 'Ham Collection',
       authorCallsign:''
     }),
     created() {

@@ -1,5 +1,5 @@
 {
-  "name": "qsldesktopmaterial",
+  "name": "hamcollection",
   "version": "0.0.0",
   "author": "Yuyan <sakura@alleysakura.com>",
   "description": "An electron-vue project",
@@ -18,7 +18,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "qsldesktopmaterial",
+    "productName": "HamCollection",
     "appId": "org.simulatedgreg.electron-vue",
     "directories": {
       "output": "build"
