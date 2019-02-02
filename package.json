@@ -54,6 +54,9 @@
   "dependencies": {
     "axios": "^0.16.1",
     "emoji-flags": "^1.2.0",
+    "fs-extra": "^7.0.1",
+    "lowdb": "^1.0.0",
+    "path": "^0.12.7",
     "vue": "^2.4.2",
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
