@@ -61,14 +61,14 @@
       fixed: false,
       items: [
         { icon: 'home', title: '首页', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
+        { icon: 'bubble_chart', title: 'On Air!', to: '/onair' },
         { icon: 'search', title: '呼号地区查询', to: '/csquery'},
         { icon: 'info', title: '关于/隐私', to:'/about'}
       ],
       miniVariant: false,
       right: false,
       rightDrawer: false,
-      title: 'Ham Collection',
+      title: 'HamCollection',
       authorCallsign:''
     }),
     created() {

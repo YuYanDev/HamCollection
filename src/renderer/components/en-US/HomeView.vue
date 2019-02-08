@@ -5,14 +5,18 @@
 
                     <v-card color="white" class="grey--text" height="200px">
                         <v-card-title primary-title>
-                            <div class="headline">QSL卡片贴纸生成</div>
+                            <div class="headline">Logbook</div>
                             <div>
                                 <span></span><br/>
-                                <span>简化繁琐的QSL卡片填写过程，只需导入日志，即可生成带有机读码的贴纸</span>
+                                <span>Record your logs quickly and efficiently, and upload syncs</span>
                             </div>
                         </v-card-title>
                         <v-card-actions>
-                            <v-btn flat color="orange lighten-3">开始使用</v-btn>
+                            <v-btn flat color="red lighten-3" @click="$router.push('/onair')">On Air</v-btn>
+                            <v-btn flat color="orange lighten-3" @click="$router.push('/contestmode')">Contest mode</v-btn>
+                            <br/>
+                            <v-btn flat color="orange lighten-3">manage</v-btn>
+                            
                         </v-card-actions>
                     </v-card>
 
@@ -20,29 +24,30 @@
             <v-flex xs4>
                     <v-card color="white" class="grey--text" height="200px">
                         <v-card-title primary-title>
-                            <div class="headline">Carbillo转换</div>
+                            <div class="headline">In development</div>
                             <div>
                                 <span></span><br/>
-                                <span>ADIF to Carbillo? </span>
-                                <span>No No No 软件支持更多的格式</span>
+                                <span>In development </span><br/>
+                                <span>In development</span>
                             </div>
                         </v-card-title>
                         <v-card-actions>
-                            <v-btn flat color="light-blue lighten-3">开始使用</v-btn>
+                            <v-btn flat color="light-blue lighten-3">go</v-btn>
                         </v-card-actions>
                     </v-card>
             </v-flex>
             <v-flex xs4>
                     <v-card color="white" class="grey--text" height="200px"> 
                         <v-card-title primary-title>
-                            <div class="headline">呼号地区查询</div>
+                            <div class="headline">DXCC Check</div>
                             <div>
                                 <span></span><br/>
-                                <span>通上了陌生字头？来查查解锁了哪个DXCC吧</span>
+                                <span>Is it connected to a new DXCC? </span><br/>
+                                <span>Check where it comes from</span>
                             </div>
                         </v-card-title>
                         <v-card-actions>
-                            <v-btn flat color="deep-purple lighten-3" @click="callsignquery()">开始使用</v-btn>
+                            <v-btn flat color="deep-purple lighten-3" @click="callsignquery()">go</v-btn>
                         </v-card-actions>
                     </v-card>
             </v-flex>

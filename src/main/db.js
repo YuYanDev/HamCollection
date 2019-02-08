@@ -13,12 +13,22 @@ if (process.type !== 'renderer') {
 }
 const STORE_PATH = APP.getPath('userData') 
 
-const adapter = new FileSync(path.join(STORE_PATH, '/db.json')) 
+// logbook 
+const logbookAdapter = new FileSync(path.join(STORE_PATH, '/logbook.json')) 
 
-const db = Datastore(adapter) 
+const LogDB = Datastore(logbookAdapter) 
 
-if (!db.has('logbook').value()) { // 先判断该值存不存在
-    db.set('logbook', []).write() // 不存在就创建
+if (!LogDB.has('logbook').value()) { // 先判断该值存不存在
+    LogDB.set('logbook', []).write() // 不存在就创建
 }
 
-export default db 
+// cache
+const cacheAdapter = new FileSync(path.join(STORE_PATH, '/cache.json')) 
+
+const cacheDB = Datastore(cacheAdapter) 
+
+if (!cacheDB.has('cache').value()) { // 先判断该值存不存在
+    cacheDB.set('cache', []).write() // 不存在就创建
+}
+
+export {LogDB , cacheDB} 
